@@ -11,7 +11,8 @@ async function generateJoke() {
             Accept: 'application/json',
         },
     }
-    const response = await fetch('https://icanhazdadjoke.com/', config)
+    const response = await 
+    fetch('https://icanhazdadjoke.com/', config)
     const data = await response.json()
         jokeEl.innerHTML = data.joke
 }
